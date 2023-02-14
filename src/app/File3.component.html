@@ -1,0 +1,15 @@
+
+<div class="div3">
+    <br>
+    <h1>Students Reviews</h1>
+    <h4>Images, names, and courses are fetched from a list using *ngFor directive.</h4>
+      <table class="center" style="width:80%;" id="table2">
+        <tr>
+          <th *ngFor = 'let i of list' id="th2"><br>
+           <img src={{i.imgsrc}}>
+           <p>{{i.name}} <br><br>{{i.name}} has opted {{i.course}} course from our platform. And says, this is a good course to understand the basics and learn till advanced level. This covers almost all important concepts. Videos are prepared very well and also the practice sessions will boost your confidence to another level. I am totally satisfied with the contents of this course. Thank you for this course.</p>
+          </th>
+        </tr>
+        <tr>
+      </table>   
+</div>

@@ -1,0 +1,27 @@
+
+<div class="div2">
+    <br>
+    <h1>Courses</h1>
+    <h4>These contents are fetched from array using *ngFor directive. The price is shown in USD using currency filter.
+      The buy button will navigate to Buy Form(File4.component).</h4>
+      <table class="center" style="width:80%;">
+        <tr>
+          <th *ngFor = 'let i of array1'>{{i}} 
+             <button type="button" (click) = "onBack()">Buy</button>
+             <p style="color:red;font-size:20px">Price: {{599 | currency }}</p>
+          </th>
+        </tr>
+        <tr>
+            <th *ngFor = 'let i of array2'>{{i}}
+              <button type="button" (click) = "onBack()">Buy</button>
+              <p style="color:red;font-size:20px">Price: {{799 | currency }}</p>
+            </th>
+          </tr>
+          <tr>
+            <th *ngFor = 'let i of array3'>{{i}}
+              <button type="button" (click) = "onBack()">Buy</button>
+              <p style="color:red;font-size:20px">Price: {{999 | currency }}</p>
+            </th>
+          </tr>
+      </table>   
+</div>
